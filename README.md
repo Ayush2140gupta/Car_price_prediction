@@ -1,90 +1,50 @@
-Car Price Prediction 🚗💰
+# Car Price Predictor
 
-A Machine Learning project that predicts the price of a used car based on features like company, model, year, fuel type, and kilometers driven.
+Project link: https://car-price-price.herokuapp.com
+Demo Video: https://youtu.be/HEaFU68WAPM
 
-📌 Project Overview
+<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/demo.png">
 
-This project uses Machine Learning algorithms to estimate car prices accurately.
-The model is trained on historical car data and can help users get an approximate resale value of a car.
 
-🚀 Features
-Predict car prices instantly
-User-friendly interface
-Data preprocessing and cleaning
-Machine Learning model training
-Accurate predictions using regression algorithms
-🛠️ Technologies Used
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Flask / Streamlit (if used)
-Jupyter Notebook
-📂 Dataset Features
 
-The dataset contains:
+# Aim
 
-Car Name
-Company
-Year
-Fuel Type
-Kilometers Driven
-Price
-⚙️ Installation
+This project aims to predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
 
-Clone the repository:
+<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
 
-git clone https://github.com/your-username/car-price-prediction.git
+## How to use?
 
-Go to project directory:
+1. Clone the repository
+2. Install the required packages in "requirements.txt" file.
 
-cd car-price-prediction
+Some packages are:
+ - numpy 
+ - pandas 
+ - scikit-learn
 
-Install dependencies:
+3. Run the "application.py" file
+And you are good to go. 
 
-pip install -r requirements.txt
+# Description
 
-Run the project:
+## What this project does?
 
-python app.py
+1. This project takes the parameters of an used car like: Company name, Model name, Year of Purchase, Fuel Type and Number of Kilometers it has been driven.
+2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Hyundai Grand i10. 
 
-or
+<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
 
-streamlit run app.py
-📊 Machine Learning Workflow
-Data Collection
-Data Cleaning
-Exploratory Data Analysis
-Feature Engineering
-Model Training
-Model Evaluation
-Prediction
-🧠 Algorithms Used
-Linear Regression
-Random Forest Regressor
-Decision Tree Regressor
-📈 Model Accuracy
+## How this project does?
 
-The model achieved good accuracy on test data using regression evaluation metrics like:
+1. First of all the data was scraped from Quikr.com (https://quikr.com) 
+Link for data: https://github.com/rajtilakls2510/car_price_predictor/blob/master/quikr_car.csv
 
-R² Score
-Mean Absolute Error
-Mean Squared Error
-📷 Project Screenshot
+2. The data was cleaned (it was super unclean :( ) and analysed.
 
-Add your project screenshots here.
+3. Then a Linear Regression model was built on top of it which had 0.92 R2_score.
 
-screenshots/homepage.png
-🤝 Contribution
+Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/master/Quikr%20Analysis.ipynb
 
-Contributions are welcome!
+4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
 
-Fork the repository
-Create a new branch
-Commit changes
-Push to branch
-Create Pull Request
-📜 License
-
-This project is licensed under the MIT License.
